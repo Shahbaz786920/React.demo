@@ -14,7 +14,7 @@ server.use('/',deleteManager)
 server.use('/',searchManager)
 
 server.get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname,'client', "build", "favicon.ico"));
+    res.sendFile(path.join(__dirname,'firstreactapp', "build", "favicon.ico"));
 });
 const port = 3001;
 const host = '0.0.0.0';
