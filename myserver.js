@@ -2,8 +2,8 @@ const express=require('express')
 const server=express()
 const path=require('path')
 const favicon = require("serve-favicon");
-server.use(favicon(path.join(__dirname,'client', "build", "favicon.ico")));
-server.use(express.static(path.join(__dirname,'/client', "build")));
+server.use(favicon(path.join(__dirname,'firstreactapp', "build", "favicon.ico")));
+server.use(express.static(path.join(__dirname,'/firstreactapp', "build")));
 const createManager=require('./controllers/createManager')
 const deleteManager=require('./controllers/deletemanger')
 const searchManager=require('./controllers/searchmanager')
